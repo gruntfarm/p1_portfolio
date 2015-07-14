@@ -1,0 +1,27 @@
+@import 'susy';
+@import 'breakpoint';
+
+body {
+    width:100%;
+    margin:0;
+}
+
+.container {
+    @include container;
+}
+
+.wrap_content {
+    width:auto;
+}
+
+.third {
+    @include span(4 of 12);
+}
+
+.full {
+    @include span(12 of 12);
+}
+
+.half {
+    @include span(6 of 12);
+}

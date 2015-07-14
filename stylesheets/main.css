@@ -1,0 +1,45 @@
+/* line 4, ../sass/main.scss */
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 9, ../sass/main.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../var/lib/gems/1.9.1/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 13, ../sass/main.scss */
+.wrap_content {
+  width: auto;
+}
+
+/* line 17, ../sass/main.scss */
+.third {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 21, ../sass/main.scss */
+.full {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 25, ../sass/main.scss */
+.half {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
