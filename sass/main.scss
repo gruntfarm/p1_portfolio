@@ -1,27 +1,76 @@
-@import 'susy';
-@import 'breakpoint';
+@import "partials/base";
 
 body {
-    width:100%;
-    margin:0;
+    font: normal $base-font-weight $base-font-size/$base-line-height $base-font-family;
+    display:block;
+    min-height:100%;
+    max-width:1200px;
+    margin: 0 auto;
+    @include background(white);
 }
+
 
 .container {
     @include container;
-}
 
-.wrap_content {
-    width:auto;
-}
+    .box {
+        border: 1px solid #ccc;
+    }
 
-.third {
-    @include span(4 of 12);
-}
+    .left {
+        left: 0;
+        text-align: left;
 
-.full {
-    @include span(12 of 12);
-}
+    }
 
-.half {
-    @include span(6 of 12);
+    .right {
+        right: 0;
+        text-align: right;
+    }
+
+    .wrap_content {
+        width: auto;
+    }
+    .third {
+        @include span(12 of 12);
+        text-align: center;
+    }
+
+    .full {
+        @include span(12 of 12);
+        text-align: center;
+    }
+
+    .half {
+        @include span(6 of 12);
+        text-align: center;
+    }
+
+    @include breakpoint($desktop) {
+        .third {
+            @include span(4 of 12);
+        }
+
+        .full {
+            @include span(12 of 12);
+        }
+
+        .half {
+            @include span(6 of 12);
+        }
+    }
+
+    @include breakpoint($tablet) {
+        .third {
+            @include span(6 of 12);
+        }
+
+        .full {
+            @include span(12 of 12);
+        }
+
+        .half {
+            @include span(6 of 12);
+        }
+    }
 }

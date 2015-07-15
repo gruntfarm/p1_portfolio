@@ -1,0 +1,38 @@
+@import "compass";
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  container: 80%,
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+// Breakpoints
+$desktop: 700px;
+$tablet: 640px (orientation portrait);
+
+// Font Weights
+$light:300;
+$regular:400;
+$bold:700;
+
+// Base Font
+$base-font-family:'Helvetica', 'Arial', sans-serif;
+$base-font-weight:$regular;
+$base-font-size:15px;
+$base-line-height:1.5;
+
+// Fixed Font
+$fixed-font-family:monospace;
+$fixed-font-size:85%;
+$fixed-line-height:$base-line-height;
+
+// Headings
+$header-font-weight:$bold;
+
+// Spacing
+$general-spacing:10px;

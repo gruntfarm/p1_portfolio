@@ -1,12 +1,16 @@
-/* line 4, ../sass/main.scss */
+/* line 3, ../sass/main.scss */
 body {
-  width: 100%;
-  margin: 0;
+  font: normal 400 10px "Helvetica", "Arial", sans-serif;
+  display: block;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
 }
 
-/* line 9, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 .container {
-  max-width: 100%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,30 +20,118 @@ body {
   display: block;
   clear: both;
 }
-
-/* line 13, ../sass/main.scss */
-.wrap_content {
+/* line 16, ../sass/main.scss */
+.container .box {
+  border: 1px solid #ccc;
+}
+/* line 20, ../sass/main.scss */
+.container .left {
+  left: 0;
+  text-align: left;
+}
+/* line 26, ../sass/main.scss */
+.container .right {
+  right: 0;
+  text-align: right;
+}
+/* line 31, ../sass/main.scss */
+.container .wrap_content {
   width: auto;
 }
-
-/* line 17, ../sass/main.scss */
-.third {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-}
-
-/* line 21, ../sass/main.scss */
-.full {
+/* line 34, ../sass/main.scss */
+.container .third {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   float: left;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
 }
-
-/* line 25, ../sass/main.scss */
-.half {
-  width: 49.15254%;
+/* line 39, ../sass/main.scss */
+.container .full {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
   float: left;
-  margin-right: 1.69492%;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+}
+/* line 44, ../sass/main.scss */
+.container .half {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  /* line 50, ../sass/main.scss */
+  .container .third {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 54, ../sass/main.scss */
+  .container .full {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 58, ../sass/main.scss */
+  .container .half {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+@media (min-width: 640px) and (orientation: portrait) {
+  /* line 64, ../sass/main.scss */
+  .container .third {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 68, ../sass/main.scss */
+  .container .full {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 72, ../sass/main.scss */
+  .container .half {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
 }
