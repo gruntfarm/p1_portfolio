@@ -1,0 +1,30 @@
+@import "base";
+@import "color";
+
+h1 {
+  font-size: 3.5em;
+  font-weight: $bold;
+}
+
+h2 {
+  font-size: 2.75em;
+  font-weight: $bold;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: $bold;
+}
+
+.headline {
+  color: $hot;
+}
+
+.subheadline {
+
+}
+
+.article-body {
+  color: $cool;
+}
+

@@ -1,4 +1,6 @@
 @import "partials/base";
+@import "partials/color";
+@import "partials/type";
 
 body {
     font: normal $base-font-weight $base-font-size/$base-line-height $base-font-family;
@@ -6,16 +8,27 @@ body {
     min-height:100%;
     max-width:1200px;
     margin: 0 auto;
-    @include background(white);
+    @include background($cool-light);
 }
+
 
 
 .container {
     @include container;
 
+
     .box {
         border: 1px solid #ccc;
+
+        margin-left: auto;
+        margin-right: auto;
+
     }
+
+    .shaded {
+        background-color:$hot;
+    }
+
 
     .left {
         left: 0;
