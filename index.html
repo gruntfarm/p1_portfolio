@@ -6,27 +6,29 @@
     <title>Hello World</title>
     <meta name="description" content="HTML5 Hello World main page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <!--[if IE]>
-        <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/ie.css" media="screen" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
     <header class="container">
-        <div class="half box logo"><img src="img/logo-small_small.png" height="70"> </div>
-        <div class="half box"><h3 class="wrap_content right headline">Mladen Kovacevic</h3><h2 class="subheadline">Iceberg Enthusiast</h2></div>
+        <div class="half box logo"><img class="left" src="img/logo-small_small.png" alt="Crestbound" height="70" align="left"></div>
+        <div class="half box"><h2 class="wrap_content right headline">Mladen Kovacevic</h2><span class="subheadline right">Iceberg Enthusiast</span></div>
     </header>
 
     <main>
         <div class="container">
-            <article><div class="full box"><img src="img/iceberg2-large_large.jpg"></div></article>
-            <article><div class="third box eemotive shaded"><h3 class="subheadline">First Feature</h3></div></article>
-            <article><div class="third box crestbound shaded"><h3 class="subheadline">Second Feature</h3></div></article>
-            <article><div class="third box vrshift shaded"><h3 class="subheadline">Third Feature</h3></div></article>
+            <div class="full hero box"><img src="img/iceberg2-large_large.jpg" alt="Iceberg"></div>
+            <div class=""><h1>Featured Work</h1></div>
+            <article><div class="third box icebreak"><h3 class="whitecopy">The Northern Miner</h3><a href="http://www.eemotive.com/nm-99cents"><span class="whitecopy">www.eemotive.com/nm-99cents</span></a></div></article>
+            <article><div class="third box drink"><h3 class="whitecopy">Crestbound</h3><a href="http://www.crestbound.com"><span class="whitecopy">www.crestbound.com</span></a></div></article>
+            <article><div class="third box waves"><h3 class="whitecopy">GitHub</h3><a href="http://www.github.com"><span class="whitecopy">www.github.com</span></a></div></article>
         </div>
     </main>
 

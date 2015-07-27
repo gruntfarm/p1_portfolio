@@ -8,7 +8,7 @@ body {
     min-height:100%;
     max-width:1200px;
     margin: 0 auto;
-    @include background($cool-light);
+    @include background($white);
 }
 
 
@@ -18,22 +18,47 @@ body {
 
 
     .box {
-        border: 1px solid #ccc;
-
+        margin:15px;
         margin-left: auto;
         margin-right: auto;
-
     }
 
-    .shaded {
-        background-color:$hot;
+    .hero {
+        @include span(12 of 12);
+        height: 35em;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+    .icebreak {
+        @include background-image(url("../img/icebreak-small_small.jpg"));
+        @include background-size(cover);
+        min-height: 10em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .waves {
+        @include background-image(url("../img/waves-small_small.jpg"));
+        @include background-size(cover);
+        min-height: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .drink {
+        @include background-image(url("../img/drink-small_small.jpg"));
+        @include background-size(cover);
+        min-height: 10em;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .left {
         left: 0;
         text-align: left;
-
     }
 
     .right {
@@ -60,8 +85,19 @@ body {
     }
 
     @include breakpoint($desktop) {
+
+        .drink {
+            @include background-image(url("../img/drink-large_large.jpg"));
+        }
+        .waves {
+            @include background-image(url("../img/waves-large_large.jpg"));
+        }
+        .icebreak {
+            @include background-image(url("../img/icebreak-large_large.jpg"));
+        }
         .third {
             @include span(4 of 12);
+
         }
 
         .full {
