@@ -21,12 +21,37 @@ body {
         margin:15px;
         margin-left: auto;
         margin-right: auto;
+        padding:15px;
+
+        h3 {
+            font-size:2em;
+        }
+        a {
+            font-size:1.5em;
+            text-decoration: none;
+        }
     }
 
+    .logo {
+        padding:15px;
+    }
+    .byline {
+        vertical-align: bottom;
+        padding:15px;
+        text-align: right;
+        right: 0;
+        span {
+            text-align: right;
+            right:0;
+            margin:0;
+            font-size:2em;
+        }
+    }
     .hero {
         @include span(12 of 12);
-        height: 35em;
+        max-height: 35em;
         overflow: hidden;
+        padding:0;
 
         img {
             width: 100%;
@@ -69,19 +94,16 @@ body {
     .wrap_content {
         width: auto;
     }
-    .third {
+    .ofthree {
         @include span(12 of 12);
-        text-align: center;
     }
 
     .full {
         @include span(12 of 12);
-        text-align: center;
     }
 
     .half {
         @include span(6 of 12);
-        text-align: center;
     }
 
     @include breakpoint($desktop) {
@@ -95,7 +117,7 @@ body {
         .icebreak {
             @include background-image(url("../img/icebreak-large_large.jpg"));
         }
-        .third {
+        .ofthree {
             @include span(4 of 12);
 
         }
@@ -110,8 +132,15 @@ body {
     }
 
     @include breakpoint($tablet) {
-        .third {
+        .ofthree {
             @include span(6 of 12);
+            &.three {
+                @include span(12 of 12);
+            }
+        }
+
+        .three & .ofthree {
+            @include span(12 of 12);
         }
 
         .full {

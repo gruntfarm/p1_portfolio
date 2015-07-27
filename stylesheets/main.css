@@ -1,3 +1,8 @@
+/* line 3, ../sass/partials/_color.scss */
+body {
+  color: #434450;
+}
+
 /* line 5, ../sass/partials/_type.scss */
 body a, body span, body p {
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -9,19 +14,19 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 /* line 14, ../sass/partials/_type.scss */
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 /* line 19, ../sass/partials/_type.scss */
 h2 {
-  font-size: 1.8em;
+  font-size: 2.2em;
   font-weight: 700;
 }
 
 /* line 24, ../sass/partials/_type.scss */
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -74,8 +79,36 @@ body {
   margin: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px;
 }
 /* line 26, ../sass/main.scss */
+.container .box h3 {
+  font-size: 2em;
+}
+/* line 29, ../sass/main.scss */
+.container .box a {
+  font-size: 1.5em;
+  text-decoration: none;
+}
+/* line 35, ../sass/main.scss */
+.container .logo {
+  padding: 15px;
+}
+/* line 38, ../sass/main.scss */
+.container .byline {
+  vertical-align: bottom;
+  padding: 15px;
+  text-align: right;
+  right: 0;
+}
+/* line 43, ../sass/main.scss */
+.container .byline span {
+  text-align: right;
+  right: 0;
+  margin: 0;
+  font-size: 2em;
+}
+/* line 50, ../sass/main.scss */
 .container .hero {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -84,14 +117,15 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  height: 35em;
+  max-height: 35em;
   overflow: hidden;
+  padding: 0;
 }
-/* line 31, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 .container .hero img {
   width: 100%;
 }
-/* line 35, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .container .icebreak {
   background-image: url("../img/icebreak-small_small.jpg");
   -moz-background-size: cover;
@@ -102,7 +136,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 43, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .container .waves {
   background-image: url("../img/waves-small_small.jpg");
   -moz-background-size: cover;
@@ -113,7 +147,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 51, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .container .drink {
   background-image: url("../img/drink-small_small.jpg");
   -moz-background-size: cover;
@@ -124,22 +158,22 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 59, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .container .left {
   left: 0;
   text-align: left;
 }
-/* line 64, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .container .right {
   right: 0;
   text-align: right;
 }
-/* line 69, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .container .wrap_content {
   width: auto;
 }
-/* line 72, ../sass/main.scss */
-.container .third {
+/* line 97, ../sass/main.scss */
+.container .ofthree {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -147,9 +181,8 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  text-align: center;
 }
-/* line 77, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .container .full {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -158,9 +191,8 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  text-align: center;
 }
-/* line 82, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .container .half {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -169,23 +201,22 @@ body {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  text-align: center;
 }
 @media (min-width: 700px) {
-  /* line 89, ../sass/main.scss */
+  /* line 111, ../sass/main.scss */
   .container .drink {
     background-image: url("../img/drink-large_large.jpg");
   }
-  /* line 92, ../sass/main.scss */
+  /* line 114, ../sass/main.scss */
   .container .waves {
     background-image: url("../img/waves-large_large.jpg");
   }
-  /* line 95, ../sass/main.scss */
+  /* line 117, ../sass/main.scss */
   .container .icebreak {
     background-image: url("../img/icebreak-large_large.jpg");
   }
-  /* line 98, ../sass/main.scss */
-  .container .third {
+  /* line 120, ../sass/main.scss */
+  .container .ofthree {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -194,7 +225,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 103, ../sass/main.scss */
+  /* line 125, ../sass/main.scss */
   .container .full {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -204,7 +235,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 107, ../sass/main.scss */
+  /* line 129, ../sass/main.scss */
   .container .half {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -216,8 +247,8 @@ body {
   }
 }
 @media (min-width: 640px) and (orientation: portrait) {
-  /* line 113, ../sass/main.scss */
-  .container .third {
+  /* line 135, ../sass/main.scss */
+  .container .ofthree {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -226,7 +257,27 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 117, ../sass/main.scss */
+  /* line 137, ../sass/main.scss */
+  .container .ofthree.three {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 142, ../sass/main.scss */
+  .three .container .ofthree {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 146, ../sass/main.scss */
   .container .full {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -236,7 +287,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 121, ../sass/main.scss */
+  /* line 150, ../sass/main.scss */
   .container .half {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
