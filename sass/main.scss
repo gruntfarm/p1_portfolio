@@ -11,11 +11,13 @@ body {
     @include background($white);
 }
 
-
-
 .container {
     @include container;
 
+    .icon {
+        height:20px;
+        margin: 10px 20px 10px 0;
+    }
 
     .box {
         margin:15px;
@@ -26,25 +28,28 @@ body {
         h3 {
             font-size:2em;
         }
+
         a {
-            font-size:1.5em;
+            font-size:1.2em;
             text-decoration: none;
         }
     }
 
-    .logo {
-        padding:15px;
+    &.header {
+        .logo {
+            padding:15px;
+        }
     }
+
     .byline {
         vertical-align: bottom;
         padding:15px;
         text-align: right;
         right: 0;
-        span {
+        p {
             text-align: right;
             right:0;
             margin:0;
-            font-size:2em;
         }
     }
     .hero {
@@ -102,20 +107,46 @@ body {
         @include span(12 of 12);
     }
 
+    .copyright {
+        text-align: center;
+        p {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .social {
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    &.footer {
+        .logo {
+            img {
+                width:60px;
+            }
+        }
+    }
+
     .half {
         @include span(6 of 12);
     }
 
     @include breakpoint($desktop) {
 
+
+
         .drink {
-            @include background-image(url("../img/drink-large_large.jpg"));
+            @include background-image(url("../img/drink-medium_medium.jpg"));
         }
         .waves {
-            @include background-image(url("../img/waves-large_large.jpg"));
+            @include background-image(url("../img/waves-medium_medium.jpg"));
         }
         .icebreak {
-            @include background-image(url("../img/icebreak-large_large.jpg"));
+            @include background-image(url("../img/icebreak-medium_medium.jpg"));
         }
         .ofthree {
             @include span(4 of 12);
@@ -129,9 +160,24 @@ body {
         .half {
             @include span(6 of 12);
         }
+        .social {
+            img {
+                width: 30px;
+                height: auto;
+            }
+        }
+        &.footer {
+            .logo {
+                img {
+                    width: 60px;
+                }
+            }
+
+        }
     }
 
     @include breakpoint($tablet) {
+
         .ofthree {
             @include span(6 of 12);
             &.three {
@@ -149,6 +195,13 @@ body {
 
         .half {
             @include span(6 of 12);
+        }
+
+        .social {
+            img {
+                width:60px;
+                height: auto;
+            }
         }
     }
 }

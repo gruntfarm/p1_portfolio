@@ -12,18 +12,40 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: $bold;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 1.5em;
   font-weight: $bold;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: $bold;
+}
+
+@include breakpoint($desktop) {
+  h1 {
+    font-size: 2.5em;
+    font-weight: $bold;
+  }
+
+  h2 {
+    font-size: 2.2em;
+    font-weight: $bold;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: $bold;
+  }
+  .subheadline {
+    padding: {
+      font-size: 0.8em;
+    }
+  }
 }
 
 .headline {

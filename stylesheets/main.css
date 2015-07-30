@@ -1,8 +1,3 @@
-/* line 3, ../sass/partials/_color.scss */
-body {
-  color: #434450;
-}
-
 /* line 5, ../sass/partials/_type.scss */
 body a, body span, body p {
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -14,40 +9,64 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 /* line 14, ../sass/partials/_type.scss */
 h1 {
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 /* line 19, ../sass/partials/_type.scss */
 h2 {
-  font-size: 2.2em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 /* line 24, ../sass/partials/_type.scss */
 h3 {
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: 700;
 }
 
-/* line 29, ../sass/partials/_type.scss */
+@media (min-width: 700px) {
+  /* line 30, ../sass/partials/_type.scss */
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  /* line 35, ../sass/partials/_type.scss */
+  h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+  }
+
+  /* line 40, ../sass/partials/_type.scss */
+  h3 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  /* line 44, ../sass/partials/_type.scss */
+  .subheadline {
+    padding-font-size: 0.8em;
+  }
+}
+/* line 51, ../sass/partials/_type.scss */
 .headline {
   color: #78542c;
 }
 
-/* line 32, ../sass/partials/_type.scss */
+/* line 54, ../sass/partials/_type.scss */
 .subheadline {
   font-size: 1.5em;
 }
 
-/* line 36, ../sass/partials/_type.scss */
+/* line 58, ../sass/partials/_type.scss */
 .whitecopy {
   color: #fff9f0;
   text-shadow: 1px 2px 2px black;
   text-shadow: 1px 2px 2px true black;
 }
 
-/* line 41, ../sass/partials/_type.scss */
+/* line 63, ../sass/partials/_type.scss */
 .article-body {
   color: #3c6e73;
 }
@@ -62,7 +81,7 @@ body {
   background: #fff9f0;
 }
 
-/* line 16, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 .container {
   max-width: 80%;
   margin-left: auto;
@@ -74,41 +93,45 @@ body {
   display: block;
   clear: both;
 }
-/* line 20, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
+.container .icon {
+  height: 20px;
+  margin: 10px 20px 10px 0;
+}
+/* line 22, ../sass/main.scss */
 .container .box {
   margin: 15px;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
 }
-/* line 26, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .container .box h3 {
   font-size: 2em;
 }
-/* line 29, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .container .box a {
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
 }
-/* line 35, ../sass/main.scss */
-.container .logo {
+/* line 39, ../sass/main.scss */
+.container.header .logo {
   padding: 15px;
 }
-/* line 38, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .container .byline {
   vertical-align: bottom;
   padding: 15px;
   text-align: right;
   right: 0;
 }
-/* line 43, ../sass/main.scss */
-.container .byline span {
+/* line 49, ../sass/main.scss */
+.container .byline p {
   text-align: right;
   right: 0;
   margin: 0;
-  font-size: 2em;
 }
-/* line 50, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .container .hero {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -121,11 +144,11 @@ body {
   overflow: hidden;
   padding: 0;
 }
-/* line 56, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .container .hero img {
   width: 100%;
 }
-/* line 60, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .container .icebreak {
   background-image: url("../img/icebreak-small_small.jpg");
   -moz-background-size: cover;
@@ -136,7 +159,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 68, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .container .waves {
   background-image: url("../img/waves-small_small.jpg");
   -moz-background-size: cover;
@@ -147,7 +170,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 76, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 .container .drink {
   background-image: url("../img/drink-small_small.jpg");
   -moz-background-size: cover;
@@ -158,21 +181,21 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 84, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .container .left {
   left: 0;
   text-align: left;
 }
-/* line 89, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .container .right {
   right: 0;
   text-align: right;
 }
-/* line 94, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .container .wrap_content {
   width: auto;
 }
-/* line 97, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .container .ofthree {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -182,7 +205,7 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 101, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .container .full {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -192,7 +215,26 @@ body {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 105, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
+.container .copyright {
+  text-align: center;
+}
+/* line 112, ../sass/main.scss */
+.container .copyright p {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 120, ../sass/main.scss */
+.container .social img {
+  width: 30px;
+  height: auto;
+}
+/* line 128, ../sass/main.scss */
+.container.footer .logo img {
+  width: 60px;
+}
+/* line 134, ../sass/main.scss */
 .container .half {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -203,19 +245,19 @@ body {
   padding-right: 0.83333%;
 }
 @media (min-width: 700px) {
-  /* line 111, ../sass/main.scss */
+  /* line 142, ../sass/main.scss */
   .container .drink {
-    background-image: url("../img/drink-large_large.jpg");
+    background-image: url("../img/drink-medium_medium.jpg");
   }
-  /* line 114, ../sass/main.scss */
+  /* line 145, ../sass/main.scss */
   .container .waves {
-    background-image: url("../img/waves-large_large.jpg");
+    background-image: url("../img/waves-medium_medium.jpg");
   }
-  /* line 117, ../sass/main.scss */
+  /* line 148, ../sass/main.scss */
   .container .icebreak {
-    background-image: url("../img/icebreak-large_large.jpg");
+    background-image: url("../img/icebreak-medium_medium.jpg");
   }
-  /* line 120, ../sass/main.scss */
+  /* line 151, ../sass/main.scss */
   .container .ofthree {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -225,7 +267,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 125, ../sass/main.scss */
+  /* line 156, ../sass/main.scss */
   .container .full {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -235,7 +277,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 129, ../sass/main.scss */
+  /* line 160, ../sass/main.scss */
   .container .half {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -245,9 +287,18 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
+  /* line 164, ../sass/main.scss */
+  .container .social img {
+    width: 30px;
+    height: auto;
+  }
+  /* line 171, ../sass/main.scss */
+  .container.footer .logo img {
+    width: 60px;
+  }
 }
 @media (min-width: 640px) and (orientation: portrait) {
-  /* line 135, ../sass/main.scss */
+  /* line 181, ../sass/main.scss */
   .container .ofthree {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -257,7 +308,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 137, ../sass/main.scss */
+  /* line 183, ../sass/main.scss */
   .container .ofthree.three {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -267,7 +318,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 142, ../sass/main.scss */
+  /* line 188, ../sass/main.scss */
   .three .container .ofthree {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -277,7 +328,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 146, ../sass/main.scss */
+  /* line 192, ../sass/main.scss */
   .container .full {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -287,7 +338,7 @@ body {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 150, ../sass/main.scss */
+  /* line 196, ../sass/main.scss */
   .container .half {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -296,5 +347,10 @@ body {
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
+  }
+  /* line 201, ../sass/main.scss */
+  .container .social img {
+    width: 60px;
+    height: auto;
   }
 }

@@ -11,10 +11,15 @@ module.exports = function(grunt) {
             suffix: '_small',
             quality: 50
           },{
-            name: 'large',
+            name: 'medium',
             width: '680',
+            suffix: '_medium',
+            quality: 65
+          },{
+            name: 'large',
+            width: '1200',
             suffix: '_large',
-            quality: 70
+            quality: 75
           }]
         },
 
