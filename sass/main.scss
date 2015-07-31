@@ -26,18 +26,24 @@ body {
         padding:15px;
 
         h3 {
-            font-size:2em;
+            font-size: 2em;
+            margin-left: 15px;
         }
 
         a {
-            font-size:1.2em;
+            font-size: 1.2em;
             text-decoration: none;
+            margin-left: 15px;
         }
     }
 
     &.header {
         .logo {
             padding:15px;
+            img {
+
+
+            }
         }
     }
 
@@ -46,6 +52,7 @@ body {
         padding:15px;
         text-align: right;
         right: 0;
+
         p {
             text-align: right;
             right:0;
@@ -60,6 +67,10 @@ body {
 
         img {
             width: 100%;
+        }
+        h2 {
+            position:absolute;
+            margin: 15px 0 0 15px;
         }
     }
     .icebreak {
@@ -137,7 +148,14 @@ body {
 
     @include breakpoint($desktop) {
 
+        &.header {
+            .logo {
+                padding:15px;
+                img {
 
+                }
+            }
+        }
 
         .drink {
             @include background-image(url("../img/drink-medium_medium.jpg"));
